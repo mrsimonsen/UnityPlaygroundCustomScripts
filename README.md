@@ -14,6 +14,8 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 - [ ] mouse click to move
 - [ ] mouse position to control player rotation
 
+## Script Explanations
+
 ### Condition 2 Key Press
 Allows setting an action that happens when two keys are pressed at the same time.
 
