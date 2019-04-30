@@ -10,6 +10,7 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 - [x] create object on death with more than 1 health
 - [x] modify health by tag
 - [x] 2 keys pressed at the same time to trigger action
+- [ ] level generation from pixel map
 - [ ] number of points loads a new level (instead of winning)
 - [ ] mouse click to move
 - [ ] mouse position to control player rotation
