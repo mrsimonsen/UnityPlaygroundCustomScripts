@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class LevelGenerator : MonoBehavior {
+public class LevelGenerator : MonoBehaviour {
 
     public Texture2D map;
 
@@ -29,12 +29,13 @@ public class LevelGenerator : MonoBehavior {
         // The pixel is transparrent. ignore it
         return;
       }
+      
       foreach (ColorToPrefab colorMapping in colorMappings)
       {
-        if (colorMapping.color.Equals(pizelColor))
+        if (colorMapping.color.Equals(pixelColor))
         {
           Vector2 position = new Vector2(x, y);
-          Instantiate(colorMapping.prefab, position, Quaternion.identity, transfrom);
+          Instantiate(colorMapping.prefab, position, Quaternion.identity, transform);
         }
       }
     }
