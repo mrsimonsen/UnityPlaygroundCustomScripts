@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[AddComponentMenu("Playground/Gameplay/Object Shooter 2 Key")]
+[AddComponentMenu("Playground/Gameplay/Object Shooter 2 Keys")]
 public class ObjectShooter2Key : MonoBehaviour
 {
 	[Header("Object creation")]
