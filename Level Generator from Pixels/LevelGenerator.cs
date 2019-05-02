@@ -6,7 +6,7 @@ public class LevelGenerator : MonoBehaviour {
 
     public ColorToPrefab[] colorMappings;
 
-    void start(){
+    void Start(){
       GenerateLevel();
 
     }
@@ -29,7 +29,7 @@ public class LevelGenerator : MonoBehaviour {
         // The pixel is transparrent. ignore it
         return;
       }
-      
+
       foreach (ColorToPrefab colorMapping in colorMappings)
       {
         if (colorMapping.color.Equals(pixelColor))
