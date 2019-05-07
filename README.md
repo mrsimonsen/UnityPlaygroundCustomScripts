@@ -14,6 +14,7 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 - [x] 2 keys pressed at the same time to trigger action
 - [x] ObjectShooter with 2 keys pressed
 - [x] level generation from pixel map
+- [ ] fix object shooter to match rotation of both sides
 - [ ] number of points loads a new level (instead of winning)
 - [ ] mouse click to move
 - [ ] mouse position to control player rotation
