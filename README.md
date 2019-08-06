@@ -15,6 +15,7 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 - [x] ObjectShooter with 2 keys pressed
 - [x] level generation from pixel map
 - [x] avatar movement w/animation
+- [ ] avatar movement w/animation & constrained flip
 - [ ] avatar jump w/ animation
 - [ ] avatar attack w/ animation (range)
 - [ ] avatar attack w/ animation (melee)
