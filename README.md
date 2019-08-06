@@ -7,6 +7,7 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 * [Modify Health By Tag](#Modify-Health-By-Tag)
 * [Object Shooter 2 Keys](#Object-Shooter-2-Keys)
 * [Level Generation](#Level-Generation-from-pixelmap)
+* [Move Animated](#Move-Animated)
 
 #### Task List
 - [x] create object on death with more than 1 health
@@ -15,7 +16,7 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 - [x] ObjectShooter with 2 keys pressed
 - [x] level generation from pixel map
 - [x] avatar movement w/animation
-- [ ] avatar movement w/animation & constrained flip
+- [x] avatar movement w/animation & constrained flip
 - [ ] avatar jump w/ animation
 - [ ] avatar attack w/ animation (range)
 - [ ] avatar attack w/ animation (melee)
@@ -38,6 +39,9 @@ Generates prefabs based on pixel color from a colormap in a PNG or photoshop fil
 
 ### Modify Health By Tag
 Allows an object to only do damage to a certain tag. This fixes the problem where bullets shot by the player damage the player or enemies damage other enemies.
+
+### Move animated
+Extends the "Move with arrows" script to allow it to trigger an animation. Also allows an avatar to be constrained in it's 'look direction'.
 
 ### Object Shooter 2 Keys
 Allows you to shoot an object when 2 keys are pressed at the same time.

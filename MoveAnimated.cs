@@ -16,11 +16,15 @@ public class MoveAnimated : Physics2DObject
 	[Header("Orientation")]
 	public bool orientToDirection = false;
 	// The direction that will face the player
-	public Enums.Directions lookAxis = Enums.Directions.Up;
+	public Enums.Directions lookDirection = Enums.Directions.Up;
+
+	public bool constrainFlip = false;
+	public Enums.Axes constrainAxis = Enums.Axes.X;
 
 	private Vector2 movement, cachedDirection;
 	private float moveHorizontal;
 	private float moveVertical;
+
 
 	[Header("Animation")]
 	public Animator animator;
@@ -59,11 +63,23 @@ public class MoveAnimated : Physics2DObject
 		//the axis to look can be decided with the "axis" variable
 		if(orientToDirection)
 		{
-			if(movement.sqrMagnitude >= 0.01f)
+			if(constrainFlip){
+				if (constrainAxis == Enums.Axes.X){
+					if(Mathf.Abs(movement.y) >= 0.01f){
+						cachedDirection = new Vector2(0f, movement.y);
+					}
+				}
+				else{
+					if(Mathf.Abs(movement.x) >= 0.01f){
+						cachedDirection = new Vector2(movement.x, 0f);
+					}
+				}
+			}
+			else if(movement.sqrMagnitude >= 0.01f)
 			{
 				cachedDirection = movement;
 			}
-			Utils.SetAxisTowards(lookAxis, transform, cachedDirection);
+			Utils.SetAxisTowards(lookDirection, transform, cachedDirection);
 		}
 	}
 
