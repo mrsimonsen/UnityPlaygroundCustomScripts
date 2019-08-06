@@ -35,6 +35,7 @@ public class JumpAnimated : Physics2DObject
 			// Apply an instantaneous upwards force
 			rigidbody2D.AddForce(Vector2.up * jumpStrength, ForceMode2D.Impulse);
 			canJump = !checkGround;
+			animator.SetBool(var, true);
 		}
 	}
 
@@ -44,6 +45,7 @@ public class JumpAnimated : Physics2DObject
 			&& collisionData.gameObject.CompareTag(groundTag))
 		{
 			canJump = true;
+			animator.SetBool(var, false);
 		}
 	}
 }

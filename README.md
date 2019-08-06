@@ -8,6 +8,7 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 * [Object Shooter 2 Keys](#Object-Shooter-2-Keys)
 * [Level Generation](#Level-Generation-from-pixelmap)
 * [Move Animated](#Move-Animated)
+* [Jump Animated](#Jump-Animated)
 
 #### Task List
 - [x] create object on death with more than 1 health
@@ -17,7 +18,7 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 - [x] level generation from pixel map
 - [x] avatar movement w/animation
 - [x] avatar movement w/animation & constrained flip
-- [ ] avatar jump w/ animation
+- [x] avatar jump w/ animation
 - [ ] avatar attack w/ animation (range)
 - [ ] avatar attack w/ animation (melee)
 - [ ] fix object shooter to match rotation of both sides
@@ -33,6 +34,9 @@ Allows setting an action that happens when two keys are pressed at the same time
 
 ### Create On Death
 Allows an object to create a prefab when it's health reaches 0. Requires a Health System Attribute. This fixes the problem where an object will either create a prefab every time it's hit or being destroyed after 1 hit while having more health.
+
+### Jump Animated
+Extends the "Jump" script to allow it to trigger an animation.
 
 ### Level Generation from pixelmap
 Generates prefabs based on pixel color from a colormap in a PNG or photoshop file. See tutorial video to see how it works.
