@@ -3,7 +3,7 @@ using System.Collections;
 
 [AddComponentMenu("Playground/Movement/Jump With Animation")]
 [RequireComponent(typeof(Rigidbody2D))]
-public class JumpAnimated : Physics2DObject
+public class DoubleJumpAnimated : Physics2DObject
 {
 	[Header("Jump setup")]
 	// the key used to activate the push
