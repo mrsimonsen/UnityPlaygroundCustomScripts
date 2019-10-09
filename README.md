@@ -27,6 +27,7 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 - [ ] mouse click to move
 - [ ] mouse position to control player rotation
 - [ ] figure out why CreateOnDeath doesn't work with animated sprites
+- [ ] random time enemy spawner
 
 ## Script Explanations
 
