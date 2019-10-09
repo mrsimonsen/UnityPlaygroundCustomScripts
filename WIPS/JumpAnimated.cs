@@ -39,8 +39,8 @@ public class JumpAnimated : Physics2DObject
 			dJump = true;
 			animator.SetBool(var, true);
 		}
-		else if (dJump && Input.getKeyDown(key)){
-			rigidbody2D.AddForce(Vector2.up * jumpStrength, ForceMode2D.Impule);
+		else if (dJump && Input.GetKeyDown(key)){
+			rigidbody2D.AddForce(Vector2.up * jumpStrength, ForceMode2D.Impulse);
 			dJump = false;
 			animator.SetBool(var, true);
 		}
