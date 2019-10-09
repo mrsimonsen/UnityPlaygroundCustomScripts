@@ -19,7 +19,7 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 - [x] avatar movement w/animation
 - [x] avatar movement w/animation & constrained flip
 - [x] avatar jump w/ animation
-- [ ] avatar double jump w/animation
+- [x] avatar double jump w/animation
 - [ ] avatar attack w/ animation (range)
 - [ ] avatar attack w/ animation (melee)
 - [ ] fix object shooter to match rotation of both sides
