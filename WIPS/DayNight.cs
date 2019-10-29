@@ -12,11 +12,11 @@ public class DayNight : MonoBehaviour
   public int nightDuration = 10;//how long night lasts in seconds
   public bool startDay = true; //start the game in day or night?
   public float transitionSpeed = 2f; //length of dawn and dusk transition in seconds
-  [Range(0f,1f)]
-  public float maxDark = 0.5f;//max percentage of the alpha channel
+  [Range(1,100)]
+  public int maxDark = 50;//max percentage of the alpha channel
   public Image image;
   private Color color;
-
+  private float dark;
   void Start(){
     currentTime = 0f;
     if (startDay){
@@ -26,9 +26,10 @@ public class DayNight : MonoBehaviour
     }
     else{
       isDay = false;
-      color = new Color (0f,0f,0f,maxDark);//overlay is dark
+      color = new Color (0f,0f,0f,k);//overlay is dark
       image.color = color;
     }
+    dark = (2.55*maxDark);
     Debug.Log(image.color);
   }
 
@@ -53,15 +54,14 @@ public class DayNight : MonoBehaviour
 
   }
   private bool dawnDusk(bool running){
-    int dark = (255 * maxDark) * transitionSpeed;
     if (isDay){//dawn
-      image.color.a -= dark;
-      if (image.color.a == 0){
+      image.color = new Color(0f,0f,0f,image.color.a-dark);
+      if (image.color.a <1){
         running = false;
       }
     }
     else{//dusk
-      image.color.a += dark;
+      image.color = new Color(0f,0f,0f,image.color.a+dark);
       if (image.color.a <= (255*maxDark)){
         running = false;
       }
