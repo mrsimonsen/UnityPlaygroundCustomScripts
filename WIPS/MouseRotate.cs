@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
+[AddComponentMenu("Playground/Movement/Mouse Rotation")]
 public class MouseRotate : MonoBehaviour {
   void update(){
     Vector3 = mouseWorldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition + Vector3.forward * 10f);

@@ -21,6 +21,7 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 - [x] avatar jump w/ animation
 - [x] avatar double jump w/animation
 - [ ] avatar attack w/ animation (range)
+- [ ] bullet object animation
 - [ ] avatar attack w/ animation (melee)
 - [ ] fix object shooter to match rotation of both sides
 - [ ] number of points loads a new level (instead of winning)
@@ -28,6 +29,7 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 - [ ] mouse position to control player rotation
 - [ ] figure out why CreateOnDeath doesn't work with animated sprites
 - [ ] random time enemy spawner
+- [ ] Day/Night timer
 
 ## Script Explanations
 
