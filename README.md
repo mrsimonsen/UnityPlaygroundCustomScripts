@@ -9,6 +9,8 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 * [Level Generation](#Level-Generation-from-pixelmap)
 * [Move Animated](#Move-Animated)
 * [Jump Animated](#Jump-Animated)
+* [Double Jump Animated](#Double-Jump-Animated)
+* [DayNight Timer](#DayNight-Timer)
 
 #### Task List
 - [x] create object on death with more than 1 health
@@ -20,6 +22,7 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 - [x] avatar movement w/animation & constrained flip
 - [x] avatar jump w/ animation
 - [x] avatar double jump w/animation
+- [x] Day/Night timer
 - [ ] avatar attack w/ animation (range)
 - [ ] bullet object animation
 - [ ] avatar attack w/ animation (melee)
@@ -29,7 +32,6 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 - [ ] mouse position to control player rotation
 - [ ] figure out why CreateOnDeath doesn't work with animated sprites
 - [ ] random time enemy spawner
-- [ ] Day/Night timer
 
 ## Script Explanations
 
@@ -38,6 +40,12 @@ Allows setting an action that happens when two keys are pressed at the same time
 
 ### Create On Death
 Allows an object to create a prefab when it's health reaches 0. Requires a Health System Attribute. This fixes the problem where an object will either create a prefab every time it's hit or being destroyed after 1 hit while having more health.
+
+## DayNight Timer
+Sets a transparent black overlay on the scene with a timer to be day or night.
+
+## Double Jump Animated
+Extents the "Jump" script to allow for double jumps with animation.
 
 ### Jump Animated
 Extends the "Jump" script to allow it to trigger an animation.
