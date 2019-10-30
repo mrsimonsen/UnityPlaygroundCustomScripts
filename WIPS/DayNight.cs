@@ -17,6 +17,7 @@ public class DayNight : MonoBehaviour
   public Image image;
   private Color color;
   private float dark;
+
   void Start(){
     currentTime = 0f;
     if (startDay){
@@ -26,10 +27,10 @@ public class DayNight : MonoBehaviour
     }
     else{
       isDay = false;
-      color = new Color (0f,0f,0f,maxDark/100);//overlay is dark
+      color = new Color (0f,0f,0f,maxDark/100f);//overlay is dark
       image.color = color;
     }
-    dark = (maxDark/100)/transitionSpeed;
+    dark = (maxDark/100f)/(transitionSpeed*10f);
   }
 
   void Update(){
@@ -48,19 +49,18 @@ public class DayNight : MonoBehaviour
         currentTime = Time.deltaTime;//reset timer when transition is complete
       }
     }
-    Debug.Log(currentTime);
-    Debug.Log(image.color);
   }
   private bool dawnDusk(bool running){
     if (isDay){//dawn
       image.color = new Color(0f,0f,0f,image.color.a-dark);
-      if (image.color.a <.01){
+      if (image.color.a <0.01){
         running = false;
+        image.color = new Color (0f,0f,0f,0f);//close enough - set to 0
       }
     }
     else{//dusk
       image.color = new Color(0f,0f,0f,image.color.a+dark);
-      if (image.color.a <= (maxDark/100)){
+      if (image.color.a >= (maxDark/100f)){
         running = false;
       }
     }
