@@ -21,7 +21,7 @@ public class CrouchAnimated : Physics2DObject
 			// crouch when pressing the button
 			animator.SetBool(var, true);
 		}
-    else{
+    else if(Input.GetKeyUp(key)){
       // stop when button is not pressed
       animator.SetBool(var,false);
     }
