@@ -16,12 +16,12 @@ public class CrouchAnimated : Physics2DObject
 	// Read the input from the player
 	void Update()
 	{
-		if(Input.GetKeyDown(key))
+		if(Input.GetButton(key))
 		{
 			// crouch when pressing the button
 			animator.SetBool(var, true);
 		}
-    else if(Input.GetKeyUp(key)){
+    else{
       // stop when button is not pressed
       animator.SetBool(var,false);
     }
