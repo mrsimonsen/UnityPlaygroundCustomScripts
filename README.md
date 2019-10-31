@@ -11,6 +11,7 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 * [Jump Animated](#Jump-Animated)
 * [Double Jump Animated](#Double-Jump-Animated)
 * [DayNight Timer](#DayNight-Timer)
+* [Crouch Animated](#Crouch-Animated)
 
 #### Task List
 - [x] create object on death with more than 1 health
@@ -40,6 +41,9 @@ Allows setting an action that happens when two keys are pressed at the same time
 
 ### Create On Death
 Allows an object to create a prefab when it's health reaches 0. Requires a Health System Attribute. This fixes the problem where an object will either create a prefab every time it's hit or being destroyed after 1 hit while having more health.
+
+## Crouch Animated
+Creates the ability to crouch with an animation.
 
 ## DayNight Timer
 Sets a transparent black overlay on the scene with a timer to be day or night. You'll need to create an Empty Game Object in your scene and add this script to it. You will also need to add a Canvas component and set the Render Mode to "Screen Space - Overlay". Lastly, add an Image component and drag it into the Image box of the DayNight script.
