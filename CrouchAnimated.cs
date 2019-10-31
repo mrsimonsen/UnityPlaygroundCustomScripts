@@ -18,8 +18,12 @@ public class CrouchAnimated : Physics2DObject
 	{
 		if(Input.GetKeyDown(key))
 		{
-			// Apply an instantaneous upwards force
+			// crouch when pressing the button
 			animator.SetBool(var, true);
 		}
+    else{
+      // stop when button is not pressed
+      animator.SetBool(var,false);
+    }
 	}
 }
