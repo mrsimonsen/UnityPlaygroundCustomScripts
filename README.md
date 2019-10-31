@@ -4,14 +4,14 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 ## Current Script List
 * [Condition 2 Key Press](#Condition-2-Key-Press)
 * [Create On Death](#Create-On-Death)
-* [Modify Health By Tag](#Modify-Health-By-Tag)
-* [Object Shooter 2 Keys](#Object-Shooter-2-Keys)
-* [Level Generation](#Level-Generation-from-pixelmap)
-* [Move Animated](#Move-Animated)
-* [Jump Animated](#Jump-Animated)
-* [Double Jump Animated](#Double-Jump-Animated)
-* [DayNight Timer](#DayNight-Timer)
 * [Crouch Animated](#Crouch-Animated)
+* [DayNight Timer](#DayNight-Timer)
+* [Double Jump Animated](#Double-Jump-Animated)
+* [Jump Animated](#Jump-Animated)
+* [Level Generation](#Level-Generation-from-pixelmap)
+* [Modify Health By Tag](#Modify-Health-By-Tag)
+* [Move Animated](#Move-Animated)
+* [Object Shooter 2 Keys](#Object-Shooter-2-Keys)
 
 #### Task List
 - [x] create object on death with more than 1 health
@@ -24,6 +24,7 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 - [x] avatar jump w/ animation
 - [x] avatar double jump w/animation
 - [x] Day/Night timer
+- [x] Crouch animation
 - [ ] avatar attack w/ animation (range)
 - [ ] bullet object animation
 - [ ] avatar attack w/ animation (melee)
