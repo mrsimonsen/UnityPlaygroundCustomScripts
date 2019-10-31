@@ -16,7 +16,7 @@ public class CrouchAnimated : Physics2DObject
 	// Read the input from the player
 	void Update()
 	{
-		if(Input.GetButton(key))
+		if(Input.GetKey(key))
 		{
 			// crouch when pressing the button
 			animator.SetBool(var, true);
