@@ -2,6 +2,7 @@
 A collection of custom scripts I wrote to expand the functionality of Unity Playground for my game design class.
 
 ## Current Script List
+* [Animate When Button Press](#Button-Animate)
 * [Condition 2 Key Press](#Condition-2-Key-Press)
 * [Create On Death](#Create-On-Death)
 * [Crouch Animated](#Crouch-Animated)
@@ -25,6 +26,7 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 - [x] avatar double jump w/animation
 - [x] Day/Night timer
 - [x] Crouch animation
+- [x] Button Press animation
 - [ ] avatar attack w/ animation (range)
 - [ ] bullet object animation
 - [ ] avatar attack w/ animation (melee)
@@ -36,6 +38,9 @@ A collection of custom scripts I wrote to expand the functionality of Unity Play
 - [ ] random time enemy spawner
 
 ## Script Explanations
+
+### Button Animate
+Extends the Condition Key Press to allow it to also trigger an animation.
 
 ### Condition 2 Key Press
 Allows setting an action that happens when two keys are pressed at the same time.
